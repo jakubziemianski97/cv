@@ -1,0 +1,211 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-color: #e6e6e6;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.wrapper .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.wrapper .about-me__img {
+  margin-bottom: 2rem;
+  background-image: url("/img/DSC_8013-2.jpg");
+  background-position: -10px 0px;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 10px #ccc;
+  outline: 2px solid rgb(192, 191, 191);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.wrapper .about-me__info {
+  width: 100%;
+}
+.wrapper .about-me__info-name {
+  margin-bottom: 0.5rem;
+}
+.wrapper .about-me__info-name h1 {
+  font-size: 2em;
+}
+.wrapper .about-me__info-title {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid grey;
+  overflow: hidden;
+}
+.wrapper .about-me__info-title h4 {
+  font-size: 2rem;
+}
+.wrapper .about-me__info-title-description {
+  text-align: justify;
+}
+.wrapper button.accordion-button {
+  display: flex;
+  text-align: center; /* Center text */
+  justify-content: center; /* Center content */
+  align-items: center;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  transition: transform 0.3s;
+}
+.wrapper button.accordion-button::after {
+  display: none; /* Hide the default arrow */
+}
+.wrapper button.accordion-button:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+.wrapper button.accordion-button p {
+  margin-bottom: 0;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.wrapper .accordion-body {
+  background-color: #e6e6e6;
+  box-shadow: none;
+  outline: none;
+  text-align: justify;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2rem;
+}
+.wrapper .education .education-element {
+  text-align: center;
+}
+.wrapper .education .first {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.wrapper .work-element {
+  text-align: center;
+}
+.wrapper .work-element .description {
+  text-align: justify;
+}
+.wrapper .work .first {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.wrapper .work .second {
+  margin-bottom: 3rem;
+}
+.wrapper .projects .project {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.wrapper .projects .project .description {
+  text-align: justify;
+}
+.wrapper .projects .project .button {
+  margin: 0.5rem;
+  background-color: #eeeeee;
+  padding: 1rem 2rem;
+  width: 45%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 2px solid gray;
+  transition: 0.3s;
+}
+.wrapper .projects .project .button:hover {
+  transform: scale(0.95);
+  box-shadow: inset 0px 0px 10px 1px grey;
+}
+.wrapper .projects .first {
+  margin-top: 1rem;
+}
+.wrapper .projects .third {
+  margin-bottom: 0.5rem;
+}
+.wrapper .contact {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .contact-personal .phone {
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .contact-personal .phone i {
+  margin-top: 0.5rem;
+}
+.wrapper .contact-personal .phone p {
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+.wrapper .contact-personal .phone p a {
+  text-decoration: none;
+  color: #000;
+}
+.wrapper .contact-personal .email {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .contact-personal .email i {
+  margin-top: 0.5rem;
+}
+.wrapper .contact-personal .email p {
+  padding-left: 1.5rem;
+}
+.wrapper .contact-personal .email p a {
+  text-decoration: none;
+  color: #000;
+}
+.wrapper .contact-web {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 4rem;
+}
+.wrapper .collapsed {
+  background-color: #e6e6e6;
+  border: none; /* Usunięcie obramowania dla accordion-body */
+  box-shadow: none;
+  outline: none;
+}
+.wrapper .accordion-item {
+  background-color: #e6e6e6;
+  border: none; /* Usunięcie obramowania dla accordion-body */
+  box-shadow: none;
+  outline: none;
+}
+.wrapper a {
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

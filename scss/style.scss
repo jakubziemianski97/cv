@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: auto;
+	font-style: normal;
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	overflow-x: hidden;
+}
+.wrapper {
+	background-color: #e6e6e6;
+	min-height: 100vh;
+	width: 100vw;
+	padding: 3rem;
+	box-sizing: border-box;
+	.about-me {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		&__img {
+			margin-bottom: 2rem;
+			background-image: url('/img/DSC_8013-2.jpg');
+			background-position: -10px 0px;
+			background-size: cover;
+			box-shadow: 0px 0px 10px 10px #ccc;
+			outline: 2px solid rgb(192, 191, 191);
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+		}
+		&__info {
+			width: 100%;
+			&-name {
+				// color: red;
+				margin-bottom: 0.5rem;
+				h1 {
+					font-size: 2em;
+				}
+			}
+			&-title {
+				padding-bottom: 1.5rem;
+				border-bottom: 1px solid grey;
+				overflow: hidden;
+
+				h4 {
+					font-size: 2rem;
+				}
+				&-description {
+					text-align: justify;
+				}
+			}
+		}
+	}
+
+	button.accordion-button {
+		display: flex;
+		text-align: center; /* Center text */
+		justify-content: center; /* Center content */
+		align-items: center;
+		background-color: transparent;
+		color: #000;
+		border: none;
+		box-shadow: none;
+		outline: none;
+		transition: transform 0.3s;
+		&::after {
+			display: none; /* Hide the default arrow */
+		}
+	}
+	button.accordion-button:hover {
+		background-color: transparent;
+		transform: scale(1.1);
+	}
+	button.accordion-button p {
+		margin-bottom: 0;
+		font-size: 3rem;
+		margin-top: 1rem;
+	}
+	.accordion-body {
+		background-color: #e6e6e6;
+		// border: none; /* Usunięcie obramowania dla accordion-body */
+		box-shadow: none;
+		outline: none;
+		text-align: justify;
+		border-bottom: 1px solid gray;
+		padding-bottom: 2rem;
+	}
+	.education {
+		// display: flex;
+		// flex-direction: row;
+		// width: 20%;
+		.education-element {
+			text-align: center;
+		}
+		.first {
+			margin-bottom: 3rem;
+			margin-top: 1rem;
+		}
+	}
+	.work {
+		&-element {
+			text-align: center;
+			.description {
+				text-align: justify;
+			}
+		}
+		.first {
+			margin-bottom: 3rem;
+			margin-top: 1rem;
+		}
+		.second {
+			margin-bottom: 3rem;
+		}
+	}
+	.projects {
+		.project {
+			text-align: center;
+			margin-bottom: 3rem;
+			.description {
+				text-align: justify;
+			}
+			.button {
+				margin: 0.5rem;
+				background-color: #eeeeee;
+				padding: 1rem 2rem;
+				width: 45%;
+				text-align: center;
+				text-transform: uppercase;
+				border-radius: 30px;
+				border: 2px solid gray;
+				transition: 0.3s;
+				&:hover {
+					transform: scale(0.95);
+					box-shadow: inset 0px 0px 10px 1px grey;
+				}
+			}
+		}
+		.first {
+			margin-top: 1rem;
+		}
+		.third {
+			margin-bottom: 0.5rem;
+		}
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		&-personal {
+			// display: flex;
+			// flex-direction: column;
+			.phone {
+				margin-top: 1rem;
+				font-size: 2rem;
+				display: flex;
+				flex-direction: row;
+				i {
+					margin-top: 0.5rem;
+				}
+				p {
+					padding-left: 1.5rem;
+					padding-bottom: 1.5rem;
+					margin: 0;
+					a {
+						// padding-bottom: -1rem;
+						text-decoration: none;
+						color: #000;
+					}
+				}
+			}
+			.email {
+				font-size: 2rem;
+				display: flex;
+				flex-direction: row;
+				i {
+					margin-top: 0.5rem;
+				}
+				p {
+					padding-left: 1.5rem;
+					a {
+						text-decoration: none;
+						color: #000;
+					}
+				}
+			}
+		}
+		&-web {
+			margin-top: 2rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			font-size: 4rem;
+		}
+	}
+	.collapsed {
+		background-color: #e6e6e6;
+		border: none; /* Usunięcie obramowania dla accordion-body */
+		box-shadow: none;
+		outline: none;
+	}
+
+	.accordion-item {
+		background-color: #e6e6e6;
+		border: none; /* Usunięcie obramowania dla accordion-body */
+		box-shadow: none;
+		outline: none;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+}
