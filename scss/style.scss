@@ -225,3 +225,131 @@ body {
 		color: #000;
 	}
 }
+@media (min-width: 768px) {
+	.wrapper {
+		// max-width: 768px;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		.about-me {
+			&__img {
+				width: 250px;
+				height: 250px;
+			}
+			&__info {
+				&-name {
+					h1 {
+						font-size: 4rem;
+					}
+				}
+				&-title {
+					h4 {
+						font-size: 2.5rem;
+					}
+				}
+			}
+		}
+		button.accordion-button {
+			p {
+				font-size: 3.5rem;
+			}
+		}
+	}
+	.accordion-body {
+		font-size: 1.5rem;
+		.education-element,
+		.work-element,
+		.project {
+			strong {
+				font-size: 2.2rem;
+			}
+			font-size: 1.8rem;
+		}
+	}
+	.contact {
+		min-width: 680px;
+		padding-left: 3rem;
+		&-personal {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		.education {
+			.first {
+				padding-top: 1rem;
+				margin-bottom: 0;
+			}
+			.second {
+				margin-bottom: 0;
+			}
+			.third {
+				padding-bottom: 0;
+			}
+		}
+		.work {
+			.first {
+				padding-top: 1rem;
+				margin-bottom: 0;
+			}
+			.second {
+				padding-bottom: 0;
+			}
+		}
+		.projects {
+			.project {
+				.button {
+					max-width: 200px;
+					margin-top: 3rem;
+					margin-left: 5rem;
+					margin-right: 5rem;
+				}
+			}
+			.first {
+				padding-top: 1rem;
+			}
+		}
+		.accordion-body {
+			padding-bottom: 3rem;
+		}
+		.about-me {
+			&__info {
+				max-width: 1200px;
+				&-title {
+					padding-bottom: 4rem;
+				}
+			}
+		}
+		.contact {
+			min-width: 1200px;
+			padding-top: 1rem;
+			&-web {
+				justify-content: center;
+				.github {
+					margin-right: 5rem;
+				}
+				.linkedin {
+					margin-left: 5rem;
+				}
+			}
+		}
+	}
+	.accordion {
+		max-width: 1200px;
+	}
+	button.accordion-button {
+		padding-top: 2rem;
+	}
+	.accordion-body {
+		.education-element,
+		.work-element,
+		.project {
+			padding-bottom: 2.5rem;
+		}
+	}
+}

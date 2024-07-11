@@ -208,4 +208,112 @@ body {
 .wrapper a {
   text-decoration: none;
   color: #000;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .wrapper .about-me__img {
+    width: 250px;
+    height: 250px;
+  }
+  .wrapper .about-me__info-name h1 {
+    font-size: 4rem;
+  }
+  .wrapper .about-me__info-title h4 {
+    font-size: 2.5rem;
+  }
+  .wrapper button.accordion-button p {
+    font-size: 3.5rem;
+  }
+  .accordion-body {
+    font-size: 1.5rem;
+  }
+  .accordion-body .education-element,
+  .accordion-body .work-element,
+  .accordion-body .project {
+    font-size: 1.8rem;
+  }
+  .accordion-body .education-element strong,
+  .accordion-body .work-element strong,
+  .accordion-body .project strong {
+    font-size: 2.2rem;
+  }
+  .contact {
+    min-width: 680px;
+    padding-left: 3rem;
+  }
+  .contact-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .wrapper .education .first {
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  .wrapper .education .second {
+    margin-bottom: 0;
+  }
+  .wrapper .education .third {
+    padding-bottom: 0;
+  }
+  .wrapper .work .first {
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  .wrapper .work .second {
+    padding-bottom: 0;
+  }
+  .wrapper .projects .project .button {
+    max-width: 200px;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .wrapper .projects .first {
+    padding-top: 1rem;
+  }
+  .wrapper .accordion-body {
+    padding-bottom: 3rem;
+  }
+  .wrapper .about-me__info {
+    max-width: 1200px;
+  }
+  .wrapper .about-me__info-title {
+    padding-bottom: 4rem;
+  }
+  .wrapper .contact {
+    min-width: 1200px;
+    padding-top: 1rem;
+  }
+  .wrapper .contact-web {
+    justify-content: center;
+  }
+  .wrapper .contact-web .github {
+    margin-right: 5rem;
+  }
+  .wrapper .contact-web .linkedin {
+    margin-left: 5rem;
+  }
+  .accordion {
+    max-width: 1200px;
+  }
+  button.accordion-button {
+    padding-top: 2rem;
+  }
+  .accordion-body .education-element,
+  .accordion-body .work-element,
+  .accordion-body .project {
+    padding-bottom: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
